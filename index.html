@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aysha Firos Khan | HR Executive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .gradient-text { background: linear-gradient(135deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-4px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .profile-img { object-fit: cover; width: 100%; height: 100%; }
+        
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-extrabold tracking-tighter gradient-text">AYSHA KHAN</div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#education" class="hover:text-blue-600 transition-colors">Education</a>
+                <a href="#contact" class="px-5 py-2.5 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all shadow-md">Contact</a>
+            </div>
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-slate-600" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-nav" class="hidden md:hidden bg-white border-b border-slate-200 p-6 space-y-4">
+            <a href="#about" class="block font-semibold">About</a>
+            <a href="#experience" class="block font-semibold">Experience</a>
+            <a href="#skills" class="block font-semibold">Skills</a>
+            <a href="#contact" class="block font-semibold">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-widest">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </span>
+                    Available for New Roles
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.05]">
+                    Empowering <span class="gradient-text">People</span> & Culture.
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                    Certified HR professional (CGHR) with a computer science background. Passionate about driving organizational success through effective payroll management, statutory compliance, and talent acquisition.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="mailto:ayshariyakhan@gmail.com" class="flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-slate-800 transition-all shadow-2xl shadow-slate-300">
+                        <i data-lucide="send" class="w-5 h-5"></i> Hire Me
+                    </a>
+                    <a href="#experience" class="flex items-center gap-2 px-8 py-4 bg-white border border-slate-200 text-slate-700 font-bold rounded-2xl hover:bg-slate-50 transition-all">
+                        Experience
+                    </a>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <!-- Decorative Elements -->
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-purple-100 rounded-full blur-3xl opacity-60"></div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-60"></div>
+                
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                    <div class="relative bg-white p-6 rounded-[2.5rem] border border-slate-100 shadow-2xl">
+                        <!-- THE IMAGE -->
+                        <div class="w-full aspect-square bg-slate-100 rounded-3xl mb-8 overflow-hidden border-2 border-slate-50 relative">
+                            <img 
+                                src="afk.png" 
+                                alt="Aysha Firos Khan" 
+                                class="profile-img"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <!-- Placeholder if afk.png is not found yet -->
+                            <div class="hidden absolute inset-0 items-center justify-center text-5xl font-extrabold text-slate-200 bg-slate-100">
+                                AFK
+                            </div>
+                        </div>
+                        
+                        <div class="text-center pb-4">
+                            <h2 class="text-3xl font-bold text-slate-900">Aysha Firos Khan</h2>
+                            <p class="text-blue-600 font-semibold mb-6">Certified HR Professional</p>
+                            
+                            <div class="grid grid-cols-3 gap-2 py-4 border-t border-slate-100">
+                                <div>
+                                    <p class="text-lg font-bold">1.5+</p>
+                                    <p class="text-[10px] text-slate-400 uppercase font-black tracking-tighter">Exp Yrs</p>
+                                </div>
+                                <div class="border-x border-slate-100">
+                                    <p class="text-lg font-bold">CGHR</p>
+                                    <p class="text-[10px] text-slate-400 uppercase font-black tracking-tighter">Certified</p>
+                                </div>
+                                <div>
+                                    <p class="text-lg font-bold">B.Sc</p>
+                                    <p class="text-[10px] text-slate-400 uppercase font-black tracking-tighter">CS Grad</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Work Experience -->
+    <section id="experience" class="py-24 bg-white border-y border-slate-100 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200">
+                    <i data-lucide="briefcase"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold tracking-tight">Professional Path</h2>
+            </div>
+            
+            <div class="space-y-16">
+                <!-- RCP Associate -->
+                <div class="relative pl-12 border-l-2 border-slate-100 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-blue-600 transition-transform group-hover:scale-125"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">HR Associate</h3>
+                            <p class="text-blue-600 font-bold flex items-center gap-2">
+                                <i data-lucide="building-2" class="w-4 h-4"></i> RCP Hospitality Pvt Ltd
+                            </p>
+                        </div>
+                        <span class="text-sm font-black text-slate-300 uppercase tracking-[0.2em] md:pt-1">2025 - Present</span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 text-slate-600 text-sm leading-relaxed">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <h4 class="font-bold text-slate-800 mb-2">Operations</h4>
+                            <p>Managed payroll processes via HRIS (Saral Payback, Web Pay Trex) and handled PF/ESI registrations.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            <h4 class="font-bold text-slate-800 mb-2">Talent Management</h4>
+                            <p>Handled recruitment cycles, drafting HR letters (Offer, Relieving), and candidate onboarding.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RCP Trainee -->
+                <div class="relative pl-12 border-l-2 border-slate-100 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-slate-200 group-hover:border-blue-300"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">HR Trainee</h3>
+                            <p class="text-slate-500 font-bold">RCP Hospitality Pvt Ltd</p>
+                        </div>
+                        <span class="text-xs font-black text-slate-300 uppercase tracking-[0.2em]">6 Months • 2025</span>
+                    </div>
+                    <p class="text-slate-600 text-sm max-w-2xl">Focused on statutory compliance foundations and employer branding through creative recruitment poster design.</p>
+                </div>
+
+                <!-- IEDC Lead -->
+                <div class="relative pl-12 border-l-2 border-slate-100 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-slate-200"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between mb-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">IEDC Lead</h3>
+                            <p class="text-slate-500 font-bold">CAS IHRD Kozhikode</p>
+                        </div>
+                        <span class="text-xs font-black text-slate-300 uppercase tracking-[0.2em]">2023</span>
+                    </div>
+                    <p class="text-slate-600 text-sm max-w-2xl">Directed the team during the IEDC initiative and coordinated the IEDC Summit 2023, enhancing leadership and task delegation skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section id="skills" class="py-24 px-6 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 blur-[120px] rounded-full"></div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Skillset & Expertise</h2>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- HRIS -->
+                <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] card-hover">
+                    <i data-lucide="database" class="w-10 h-10 text-blue-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">HRIS & Tools</h3>
+                    <div class="space-y-2 text-slate-400 text-sm">
+                        <p class="flex justify-between border-b border-white/5 pb-2"><span>Saral Payback</span> <span class="text-white">Expert</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-2"><span>Web Pay Trex</span> <span class="text-white">Advanced</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-2"><span>Voyon Folks</span> <span class="text-white">Advanced</span></p>
+                        <p class="flex justify-between pt-1"><span>MS Office (Excel)</span> <span class="text-white">Professional</span></p>
+                    </div>
+                </div>
+
+                <!-- Compliance -->
+                <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] card-hover">
+                    <i data-lucide="file-check" class="w-10 h-10 text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Compliance</h3>
+                    <div class="space-y-2 text-slate-400 text-sm">
+                        <p class="flex justify-between border-b border-white/5 pb-2"><span>PF & ESI</span> <span class="text-white">Handled</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-2"><span>Statutory Laws</span> <span class="text-white">Proficient</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-2"><span>Payroll Processing</span> <span class="text-white">Expert</span></p>
+                        <p class="flex justify-between pt-1"><span>Deductions</span> <span class="text-white">Advanced</span></p>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] card-hover">
+                    <i data-lucide="heart" class="w-10 h-10 text-pink-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Interpersonal</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-bold uppercase tracking-wider">Active Listening</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-bold uppercase tracking-wider">Adaptability</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-bold uppercase tracking-wider">Leadership</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-lg text-xs font-bold uppercase tracking-wider">Multilingual</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certs -->
+    <section id="education" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-black mb-8 flex items-center gap-3"><i data-lucide="graduation-cap"></i> Academic Background</h2>
+                    <div class="space-y-4">
+                        <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                            <h4 class="font-bold">B.Sc Computer Science</h4>
+                            <p class="text-blue-600 text-sm font-semibold">2021 - 2024</p>
+                            <p class="text-slate-500 text-sm">CAS IHRD, Kozhikode</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                            <h4 class="font-bold">Higher Secondary (Bioscience)</h4>
+                            <p class="text-blue-600 text-sm font-semibold">2019 - 2021</p>
+                            <p class="text-slate-500 text-sm">Holy Family HSS Venapara</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-black mb-8 flex items-center gap-3"><i data-lucide="award"></i> Certifications</h2>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-2xl">
+                            <div class="w-10 h-10 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center shrink-0"><i data-lucide="shield-check"></i></div>
+                            <div>
+                                <p class="font-bold text-sm">CGHR - HR Generalist</p>
+                                <p class="text-[10px] text-slate-400 uppercase font-bold">Wissen International Academy</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-2xl">
+                            <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center shrink-0"><i data-lucide="code"></i></div>
+                            <div>
+                                <p class="font-bold text-sm">React Full Stack Training</p>
+                                <p class="text-[10px] text-slate-400 uppercase font-bold">ICT Academy Kerala</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-white border border-slate-200 rounded-2xl">
+                            <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center shrink-0"><i data-lucide="zap"></i></div>
+                            <div>
+                                <p class="font-bold text-sm">Leadership Fest 2024</p>
+                                <p class="text-[10px] text-slate-400 uppercase font-bold">i-Lead Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-blue-600 rounded-[3rem] p-12 mb-16 relative overflow-hidden flex flex-col items-center text-center">
+                <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent)]"></div>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 relative z-10">Ready to build the future of your company?</h2>
+                <p class="text-blue-100 text-lg mb-8 max-w-lg relative z-10">I am open to HR roles where I can apply my operational skills and technical mindset.</p>
+                <a href="mailto:ayshariyakhan@gmail.com" class="px-10 py-5 bg-white text-blue-600 font-black rounded-2xl hover:bg-slate-50 transition-all shadow-xl relative z-10">
+                    Contact Me Today
+                </a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 text-slate-400 text-sm">
+                <div>
+       
